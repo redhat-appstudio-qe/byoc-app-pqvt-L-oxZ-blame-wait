@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: xfig
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-tytk-tenant/byoc-app-pqvt/xfig@sha256:1116cec5df0bcadbb6cb880f9d7039dbd57ed942344df2a15ae6c612f1add517
         name: my-java-quarkus
         ports:
         - containerPort: 8081
