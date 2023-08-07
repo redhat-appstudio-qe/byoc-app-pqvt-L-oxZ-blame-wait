@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: xfig
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: xfig
+    app.kubernetes.io/part-of: byoc-app-pqvt
+  name: xfigczrw
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: xfig
+    weight: null
+status: {}

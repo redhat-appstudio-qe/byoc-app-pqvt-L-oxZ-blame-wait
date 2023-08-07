@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: xfig
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-tytk-tenant/byoc-app-pqvt/xfig@sha256:1116cec5df0bcadbb6cb880f9d7039dbd57ed942344df2a15ae6c612f1add517
+        name: my-java-quarkus
+        resources: {}
+status: {}
